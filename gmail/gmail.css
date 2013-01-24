@@ -79,6 +79,9 @@ body {
 	.fl {
 		float: left;
 	}
+	.abs {
+		position: absolute;
+	}
 /* End Page specific */
 
 
@@ -115,10 +118,9 @@ body {
 				background-color: #357AE8;
 			}
 			.plus_box {
-				padding: 9px 0;
-				font-size: 10pt;
+				padding: 7px 0;
+				font-size: 9pt;
 				color: #666;
-				width: 300px;
 			}
 			.plus_vcenter {
 				vertical-align: middle;
@@ -129,16 +131,28 @@ body {
 			.plus_vcenter.bordered {
 				border: 1px solid #ccc;
 			}
+			.plus_email {
+				right: 142px;
+			}
 			.plus_notifications {
 				font-weight: bold;
 				color: #999;
 				width: 25px;
 				text-align: center;
+				right: 110px;
 			}
 			.plus_share_link {
 				color: #666;
 				width: 68px;
 				text-align: center;
+				right: 34px;
+			}
+			.plus_avatar {
+				right: 0;
+				top: 10;
+				padding: 0 !important;
+				height: 24px;
+				width: 24px;
 			}
 
 
