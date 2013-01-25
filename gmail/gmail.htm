@@ -5,7 +5,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Inbox</title>
-	<link rel="stylesheet" href="gmail.css">
+	<link rel="stylesheet" href="gmail.css" id="ss">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+	$(function(){
+		setInterval(function(){
+			var random = Math.random();
+			$("#ss").attr('href','gmail.css?a=' + random);
+		},800)
+	});
+	</script>
 </head>
 <body>
 	<nav class="top">
@@ -50,14 +59,18 @@
 	</div>
 	<!-- wraps the app picker, dynamic toolbar, email folders and emails -->
 	<div class="container">
-		<div class="gmail_toolbar rel">
+		<div class="gmail_toolbar rel b-top">
 			<div class="app_dropdown sidebar">
 				<div class="pad">
 					<span>Gmail <span class="down_arrow">▼</span></span>
 				</div>
 			</div>
 			<div class="toolbar primary_x">
-				This is the toolbar
+				<div class="button fl"><input type="checkbox" name="" id=""> <span class="down_arrow">▼</span></div>
+				<div class="spacer fl">&nbsp;</div>
+				<div class="button fl">Refresh</div>
+				<div class="spacer fl">&nbsp;</div>
+				<div class="button fl">More<span class="down_arrow">▼</span></div>
 			</div>
 		</div>
 		<div class="gmail_content rel">
